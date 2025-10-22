@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+      </ul>
+    </nav>
+
+    <main data-testid="test-about-page" class="about-page">
+      <div class="page-container">
+        <header class="page-header">
+          <h1>About Me</h1>
+          <p>
+            My journey, goals, and reflections as I navigate through this
+            program.
+          </p>
+        </header>
+
+        <!-- Bio Section -->
+        <section
+          data-testid="test-about-bio"
+          aria-labelledby="bio-heading"
+          class="about-section"
+        >
+          <h2 id="bio-heading" class="section-heading">
+            <span class="heading-icon">👨‍💻</span>
+            Who I Am
+          </h2>
+          <div class="section-content">
+            <p>
+              Hi! I'm Oluwasegun Adeniyi, a passionate Frontend Developer with a
+              love for creating accessible and user-friendly web experiences.
+              I'm always eager to learn new technologies and best practices.
+            </p>
+            <p>
+              My background includes working with modern JavaScript frameworks,
+              building RESTful APIs, and ensuring that every application I
+              create is accessible to all users. I believe that the web should
+              be inclusive, and I'm committed to making that a reality in every
+              project I work on.
+            </p>
+            <p>
+              When I'm not coding, you can find me hiking, playing guitar, or
+              reading the latest tech blogs. I'm always looking for ways to
+              improve my craft and contribute to the developer community.
+            </p>
+          </div>
+        </section>
+
+        <!-- Goals Section -->
+        <section
+          data-testid="test-about-goals"
+          aria-labelledby="goals-heading"
+          class="about-section"
+        >
+          <h2 id="goals-heading" class="section-heading">
+            <span class="heading-icon">🎯</span>
+            My Goals in This Program
+          </h2>
+          <div class="section-content">
+            <p>
+              I'm participating in the Frontend Wizards program to deepen my
+              expertise and become a more well-rounded developer. Here are my
+              specific goals:
+            </p>
+            <ul class="styled-list">
+              <li>
+                <strong>Master semantic HTML and accessibility:</strong> I want
+                to ensure every project I build is accessible to users with
+                disabilities and follows WCAG guidelines.
+              </li>
+              <li>
+                <strong>Strengthen my JavaScript fundamentals:</strong> While
+                I'm comfortable with frameworks, I want to go deeper into
+                vanilla JavaScript and understand how things work under the
+                hood.
+              </li>
+              <li>
+                <strong>Build better testing habits:</strong> I want to
+                incorporate automated testing into my workflow from the start,
+                not as an afterthought.
+              </li>
+              <li>
+                <strong>Improve my CSS skills:</strong> I want to create more
+                sophisticated layouts and animations without relying solely on
+                libraries.
+              </li>
+              <li>
+                <strong>Contribute to open source:</strong> By the end of this
+                program, I hope to have contributed to at least one open source
+                project.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Confidence Section -->
+        <section
+          data-testid="test-about-confidence"
+          aria-labelledby="confidence-heading"
+          class="about-section"
+        >
+          <h2 id="confidence-heading" class="section-heading">
+            <span class="heading-icon">💭</span>
+            Areas Where I Lack Confidence
+          </h2>
+          <div class="section-content">
+            <p>
+              Growth comes from acknowledging our weaknesses. Here are areas
+              where I'm still building confidence:
+            </p>
+            <ul class="styled-list">
+              <li>
+                <strong>Advanced CSS animations:</strong> While I can create
+                basic transitions, complex keyframe animations and performance
+                optimization still feel challenging.
+              </li>
+              <li>
+                <strong>Web performance optimization:</strong> I understand the
+                basics, but diving into things like lazy loading, code
+                splitting, and performance profiling feels overwhelming at
+                times.
+              </li>
+              <li>
+                <strong>Accessibility testing:</strong> I know accessibility is
+                important, but I'm not always sure if I'm testing thoroughly
+                enough or using the right tools.
+              </li>
+              <li>
+                <strong>Design decisions:</strong> I can implement designs well,
+                but creating them from scratch or making UX decisions without
+                guidance makes me uncertain.
+              </li>
+              <li>
+                <strong>Browser compatibility issues:</strong> Debugging
+                cross-browser issues, especially with older browsers, often
+                stumps me.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Future Note Section -->
+        <section
+          data-testid="test-about-future-note"
+          aria-labelledby="future-heading"
+          class="about-section highlight-section"
+        >
+          <h2 id="future-heading" class="section-heading">
+            <span class="heading-icon">💌</span>
+            A Note to My Future Self
+          </h2>
+          <div class="section-content">
+            <blockquote class="future-note">
+              <p>
+                Hey future me! Remember when all of this felt overwhelming? When
+                you doubted whether you could truly master accessibility, write
+                clean code, or build production-ready applications?
+              </p>
+              <p>
+                Look at how far you've come. Every bug you debugged, every
+                feature you built, every late night reading documentation — it
+                all added up. You're not the same developer you were at the
+                start of this program.
+              </p>
+              <p>
+                Keep that beginner's mindset. Stay curious. Keep asking
+                questions. And most importantly, remember that every expert was
+                once a beginner. You're doing great. Keep going!
+              </p>
+              <cite>— You, from the beginning of this journey</cite>
+            </blockquote>
+          </div>
+        </section>
+
+        <!-- Extra Thoughts Section -->
+        <section
+          data-testid="test-about-extra"
+          aria-labelledby="extra-heading"
+          class="about-section"
+        >
+          <h2 id="extra-heading" class="section-heading">
+            <span class="heading-icon">✨</span>
+            Additional Thoughts
+          </h2>
+          <div class="section-content">
+            <h3>Why Frontend Development?</h3>
+            <p>
+              I chose frontend development because I love the immediate feedback
+              loop. You write code, refresh the browser, and instantly see your
+              creation come to life. There's something magical about turning a
+              design mockup into a living, breathing interface that people
+              interact with daily.
+            </p>
+
+            <h3>Learning Philosophy</h3>
+            <p>
+              I believe in learning by doing. Reading documentation is
+              important, but nothing beats actually building projects and making
+              mistakes. This program aligns perfectly with that philosophy —
+              each stage builds on the last, and the hands-on approach forces me
+              to truly understand concepts rather than just memorizing them.
+            </p>
+
+            <h3>Gratitude</h3>
+            <p>
+              I'm grateful for this opportunity to learn alongside talented
+              developers. The Frontend Wizards community has been incredibly
+              supportive, and I'm excited to see where this journey takes me. To
+              everyone who's helped me along the way. Thank you!
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

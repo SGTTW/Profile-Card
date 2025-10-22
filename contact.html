@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+    </nav>
+
+    <main class="contact-page">
+      <div class="page-container">
+        <header class="page-header">
+          <h1>Contact Us</h1>
+          <p>
+            Have a question or want to get in touch? Fill out the form below and
+            I'll get back to you as soon as possible.
+          </p>
+        </header>
+
+        <!-- Success Message   -->
+        <div
+          data-testid="test-contact-success"
+          id="successMessage"
+          class="success-message"
+          role="alert"
+          aria-live="polite"
+          style="display: none"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <span>Thank you! Your message has been sent successfully.</span>
+        </div>
+
+        <form
+          id="contactForm"
+          method="POST"
+          action="https://formspree.io/f/mvgwjoky"
+          class="contact-form"
+        >
+          <!-- Full Name Field -->
+          <div class="form-group">
+            <label for="contactName" class="form-label">
+              Full Name <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              data-testid="test-contact-name"
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="errorName"
+              placeholder="Enter your full name"
+            />
+            <span
+              id="errorName"
+              data-testid="test-contact-error-name"
+              class="error-message"
+              role="alert"
+            ></span>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">
+              Email Address <span class="required">*</span>
+            </label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              data-testid="test-contact-email"
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="errorEmail"
+              placeholder="your.email@example.com"
+            />
+            <span
+              id="errorEmail"
+              data-testid="test-contact-error-email"
+              class="error-message"
+              role="alert"
+            ></span>
+          </div>
+
+          <!-- Subject Field -->
+          <div class="form-group">
+            <label for="contactSubject" class="form-label">
+              Subject <span class="required">*</span>
+            </label>
+            <input
+              type="text"
+              id="contactSubject"
+              name="subject"
+              data-testid="test-contact-subject"
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="errorSubject"
+              placeholder="What is this regarding?"
+            />
+            <span
+              id="errorSubject"
+              data-testid="test-contact-error-subject"
+              class="error-message"
+              role="alert"
+            ></span>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">
+              Message <span class="required">*</span>
+              <span class="field-hint">(minimum 10 characters)</span>
+            </label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              data-testid="test-contact-message"
+              class="form-textarea"
+              rows="6"
+              required
+              aria-required="true"
+              aria-describedby="errorMessage"
+              placeholder="Tell me more about your inquiry..."
+            ></textarea>
+            <span
+              id="errorMessage"
+              data-testid="test-contact-error-message"
+              class="error-message"
+              role="alert"
+            ></span>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            data-testid="test-contact-submit"
+            class="submit-button"
+          >
+            <span>Send Message</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
